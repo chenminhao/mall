@@ -1,0 +1,480 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	overflow-x:hidden;
+}
+a{
+	text-decoration:none;
+} 
+ul li{
+	list-style:none;
+}
+.head-right{
+	width:100%;
+	height:28px;
+	margin-top:6px;
+}
+.head-left{
+	width:100%;
+	height:46px;
+}
+#index>.main{
+	width:100%;
+}
+/*设置nav第一行*/
+.head-right>ul>li{
+	float:right;
+	line-height:28px;
+	padding-right:20px;
+	font-size:15px;
+}
+.head-right>ul>li>a{
+	color:#323232;
+}
+.head-right>ul>li>a:hover{
+	color:#006ad0;
+	text-decoration:underline;
+}
+/*设置nav第二行*/
+.head-left>img{
+	float:left;
+	margin-left:15px;
+}
+.ul-list>li{
+	float:left;
+	padding:0px 13px;
+}
+.ul-list>li>a{
+	display:block;
+	line-height:46px;
+	border-bottom:2px solid transparent;
+	color:#323232;
+}
+.ul-list>li>a>span{
+	display:block;
+	width:80px;
+	height:40px;
+	background:#eee;
+	text-align:center;
+	margin-bottom:6px;
+	border-radius:4px;
+}
+.ul-list>li>a>span:hover{
+	background:#cb3034;
+	color:white;
+}
+.ul-list>li>a:hover{
+	border-bottom:2px solid #cb3034;
+	color:#e22835;
+}
+#subnav{
+	clear:both;
+	width:100%;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+}
+#subnav>div{
+	position:absolute;
+	width:100%;
+	top:-382px;
+}
+.head-left>ul>.li-1:hover~#subnav>.subnav1{
+	display:block;
+	top:0;
+	z-index:1;
+}
+.head-left>ul>.li-2:hover~#subnav>.subnav2{
+	display:block;
+	z-index:1;
+	top:0;
+}
+.head-left>ul>.li-3:hover~#subnav>.subnav3{
+	display:block;
+	z-index:1;
+	top:0;
+}
+.head-left>ul>.li-4:hover~#subnav>.subnav4{
+	display:block;
+	z-index:1;
+	top:0;
+}
+.head-left>ul>.li-5:hover~#subnav>.subnav5{
+	display:block;
+	z-index:1;
+	top:0;
+}
+#subnav>div:hover{
+	display:block;
+	top:0;
+	z-index: 1;
+}
+.navs>ul>li>a{
+	font-size: 0px;
+}
+/*设置#subnav，实现hover出现下拉菜单*/
+/*第一个*/
+#subnav>div>ul{
+	height:240px;
+	background:#f1f1f1;
+}
+.subnav1-top{
+	margin-left:3%;
+}
+.subnav1-bottom{
+	border-left:rgba(155, 155, 155, 0.15) solid 1px;
+}
+.subnav1>ul>li{
+	padding-top:50px;
+	width:24%;
+	height:190px;
+	float:left;
+}
+.subnav1>ul>li>ul{
+	width:80%;
+	margin:0 auto;
+}
+.subnav1>ul>li>ul>div{
+	float:left;
+	padding-right:15px;
+}
+.subnav1>ul>li>ul>li{
+	float:left;
+	padding-bottom:5px;
+}
+.subnav1>ul>li>ul>li>a{
+	color:#333;
+	font-size:14px;
+}
+.subnav1>ul>li>ul>.subnav1-button>a{
+	display:block;
+}
+.subnav1>ul>li>ul>.subnav1-button>a>span{
+	display:block;
+	width:180px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border-radius:4px;
+}
+.subnav1>ul>li:last-of-type>ul>li{
+	clear:both;
+}
+.subnav1>ul>li>ul>li>a:hover{
+	color:#006ad0;
+	text-decoration:underline;
+}
+.subnav1>ul>li:hover{
+	background:#e5e5e5;
+}
+.subnav1>ul>li:hover>ul>.subnav1-button>a{
+	text-decoration:none;
+}
+
+#subnav>.subnav1>ul>li:hover>ul>.subnav1-button>a>span{
+	background:#cb3034;
+	color:white;
+}
+#subnav>.subnav1>ul>.subnav1-bottom:hover>ul>.subnav1-button>a{
+	text-decoration:underline；
+}
+/*第二个*/
+#subnav>.subnav2>ul{
+	width:100%;
+	height:300px;
+	background:#f1f1f1;
+}
+#subnav>.subnav2>ul>li{
+	width:16%;
+	height:280px;
+	text-align:center;
+	padding-top:20px;
+	float:left;
+	border-right:rgba(155, 155, 155, 0.15) solid 1px;
+}
+#subnav>.subnav2>ul>li>p{
+	font-size:20px;
+	color:#333;
+	padding-bottom:20px;
+}
+
+#subnav>.subnav2>ul>li>a{
+	display:block;
+	margin:6px auto;
+	font-size:14px;
+	width:80px;
+	height:22px;
+	line-height:22px;
+	color:#333;
+	border-radius:2px;
+	font-family:微软雅黑;	
+}
+#subnav>.subnav2>ul>li>h5{
+	color:#c52525;
+	font-size:23px;
+}
+#subnav>.subnav2>ul>li:hover{
+	background:#e5e5e5;
+}
+#subnav>.subnav2>ul>li:hover>p{
+	color:#006ad0;
+}
+#subnav>.subnav2>ul>li:hover>a{
+	background:#cb3034;
+	color:white;
+}
+/*第三个*/
+#subnav>.subnav3>ul{
+	width:100%;
+	height:300px;
+	background:#f1f1f1;
+}
+#subnav>.subnav3>ul>li{
+	width:18%;
+	height:280px;
+	/*text-align:center;*/
+	padding-top:20px;
+	float:left;
+	border-right:rgba(155, 155, 155, 0.15) solid 1px;
+}
+#subnav>.subnav3>ul>.subnav3-top{
+	margin-left:9.5%;
+}
+#subnav>.subnav3>ul>li>ul{
+		width:100%;
+		height:85%;
+}
+#subnav>.subnav3>ul>li>p{
+	font-size:20px;
+	color:#333;
+	padding-bottom:20px;
+}
+#subnav>.subnav3>ul>li>a{
+	display:inline-block;
+	font-size:14px;
+	margin-left:10px;
+	width:72px;
+	height:22px;
+	line-height:22px;
+	color:#333;
+	border-radius:2px;
+	font-family:微软雅黑;	
+}
+#subnav>.subnav3>ul>li>h5{
+	color:#c52525;
+	font-size:23px;
+}
+#subnav>.subnav3>ul>li>ul>li{
+	padding-left:10px;
+}
+#subnav>.subnav3>ul>li>ul>.subnav3-head{
+	color:#cb3034;
+	font-size:22px;
+	font-weight:800;
+}
+#subnav>.subnav3>ul>li>ul>li>a{
+	display:block;
+	color:#333;
+	margin-top:5px;
+}
+#subnav>.subnav3>ul>li:hover{
+	background:#e5e5e5;
+}
+#subnav>.subnav3>ul>li:hover>p{
+	color:#006ad0;
+}
+#subnav>.subnav3>ul>li:hover>a{
+	background:#cb3034;
+	color:white;
+}
+#subnav>.subnav3>ul>li>ul>li>a:hover{
+	color:#006ad0;
+	text-decoration:underline;
+}
+/*第四个*/
+#subnav>.subnav4>ul{
+	width:100%;
+	height:300px;
+	background:#f1f1f1;
+}
+#subnav>.subnav4>ul>li{
+	width:18%;
+	height:280px;
+	/*text-align:center;*/
+	padding-top:20px;
+	float:left;
+	border-right:rgba(155, 155, 155, 0.15) solid 1px;
+}
+#subnav>.subnav4>ul>li:first-of-type{
+	margin-left:9.5%;
+}
+#subnav>.subnav4>ul>li>ul{
+		width:100%;
+		height:85%;
+}
+#subnav>.subnav4>ul>li>p{
+	font-size:20px;
+	color:#333;
+	padding-bottom:20px;
+}
+#subnav>.subnav4>ul>li>a{
+	display:inline-block;
+	margin-left:10px;
+	font-size:14px;
+	width:72px;
+	height:22px;
+	line-height:22px;
+	color:#333;
+	border-radius:2px;
+	font-family:微软雅黑;	
+}
+#subnav>.subnav4>ul>li>h5{
+	color:#c52525;
+	font-size:23px;
+}
+#subnav>.subnav4>ul>li>ul>li{
+	clear:both;
+	padding-left:10px;
+}
+#subnav>.subnav4>ul>li>ul>li>a{
+	display:block;
+	color:#333;
+	margin-top:5px;
+}
+#subnav>.subnav4>ul>li>ul>li>img{
+	width:95%;
+}
+#subnav>.subnav4>ul>li>ul>.subnav4-head{
+	color:#cb3034;
+	font-size:22px;
+	font-weight:800;
+}
+#subnav>.subnav4>ul>li:hover{
+	background:#e5e5e5;
+}
+#subnav>.subnav4>ul>li:hover>p{
+	color:#006ad0;
+}
+#subnav>.subnav4>ul>li:hover>a{
+	background:#cb3034;
+	color:white;
+}
+#subnav>.subnav4>ul>li>ul>li>a:hover{
+	color:#006ad0;
+	text-decoration:underline;
+}
+/*第五个*/
+#subnav>.subnav5>ul{
+	width:100%;
+	height:300px;
+	background:#f1f1f1;
+}
+#subnav>.subnav5>ul>li{
+	width:18%;
+	height:280px;
+	padding-top:20px;
+	float:left;
+	border-right:rgba(155, 155, 155, 0.15) solid 1px;
+}
+#subnav>.subnav5>ul>.subnav5-top{
+	margin-left:9.5%;
+}
+#subnav>.subnav5>ul>li>ul{
+		width:100%;
+		height:85%;
+}
+#subnav>.subnav5>ul>li>p{
+	font-size:20px;
+	color:#333;
+	padding-bottom:20px;
+}
+#subnav>.subnav5>ul>li>a{
+	display:inline-block;
+	margin-left:10px;
+	font-size:14px;
+	width:72px;
+	height:22px;
+	line-height:22px;
+	color:#333;
+	border-radius:2px;
+	font-family:微软雅黑;	
+}
+#subnav>.subnav5>ul>li>h5{
+	color:#c52525;
+	font-size:23px;
+}
+#subnav>.subnav5>ul>li>ul>li{
+	clear:both;
+	padding-left:10px;
+}
+#subnav>.subnav5>ul>li>ul>li>a{
+	display:block;
+	color:#333;
+	margin-top:5px;
+}
+#subnav>.subnav5>ul>li>ul>li>img{
+	width:95%;
+}
+#subnav>.subnav5>ul>li>ul>.subnav5-head{
+	color:#cb3034;
+	font-size:22px;
+	font-weight:800;
+}
+#subnav>.subnav5>ul>.subnav5-bottom>ul>li{
+	color:#333;
+	font-size:18px;
+	font-weight:100;
+}
+#subnav>.subnav5>ul>.subnav5-bottom>ul>li:hover{
+	color:#006ad0;
+	text-decoration:underline;
+}
+#subnav>.subnav5>ul>li:hover{
+	background:#e5e5e5;
+}
+#subnav>.subnav5>ul>li:hover>p{
+	color:#006ad0;
+}
+#subnav>.subnav5>ul>li:hover>a{
+	background:#cb3034;
+	color:white;
+}
+#subnav>.subnav5>ul>li>ul>li>a:hover{
+	color:#006ad0;
+	text-decoration:underline;
+}
+/*轮播图效果*/
+#index>.slider-list{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 44%;
+	margin-bottom: 25px;
+}
+#index>.slider-list>ul{
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	animation:col1 10s ease 0s infinite alternate;
+	width: 500%;
+	list-style: none;
+	overflow: hidden;
+}
+#index>.slider-list>ul>li{
+	float:left;
+	width: 20%;
+}
+#index>.slider-list>ul>li>img{
+	width: 100%;
+	display: block;
+}
+@keyframes col1{
+	0%{left: 0%;}
+	25%{left:-100%;}
+	50%{left:-200%;}
+	75%{left:-300%;}
+	100%{left:-400%;}
+}
+
